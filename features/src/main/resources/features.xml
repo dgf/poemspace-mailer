@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<features name="poemspace-mailer-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+
+    <feature name="mailer" description="Poem Space Mailer Distribution" version="${project.version}">
+        <feature version="4.1-SNAPSHOT">dm4-standard</feature>
+        <feature version="2.2.9">dm4-webconsole</feature>
+        <bundle>mvn:de.deepamehta/deepamehta-images/0.0.2-SNAPSHOT</bundle>
+        <bundle>mvn:de.deepamehta/deepamehta-mail/0.0.2-SNAPSHOT</bundle>
+        <bundle>mvn:com.poemspace/dm4-poemspace/0.0.2-SNAPSHOT</bundle>
+    </feature>
+
+</features>
