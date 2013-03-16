@@ -5,11 +5,21 @@
 
     <groupId>com.poemspace.mailer</groupId>
     <artifactId>global</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1</version>
     <packaging>pom</packaging>
     <name>Poem Space :: Mailer</name>
 
     <properties>
+        <dm4.version>4.1</dm4.version>
+        <dm4.host.url>http://localhost:18081</dm4.host.url>
+
+        <karaf.version>2.3.0</karaf.version>
+        <karaf.name>poemspace-mailer</karaf.name>
+
+        <dm4.security.read_requires_login>true</dm4.security.read_requires_login>
+        <dm4.security.write_requires_login>true</dm4.security.write_requires_login>
+        <dm4.security.subnet_filter>0.0.0.0/0</dm4.security.subnet_filter>
+
         <file.encoding>UTF-8</file.encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>

@@ -5,25 +5,15 @@
 
     <groupId>com.poemspace.mailer</groupId>
     <artifactId>distribution</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1</version>
     <name>Poem Space :: Mailer :: Distribution</name>
 
     <parent>
         <groupId>com.poemspace.mailer</groupId>
         <artifactId>global</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-
-    <properties>
-        <dm4.host.url>http://localhost:18081</dm4.host.url>
-        <dm4.version>4.1-SNAPSHOT</dm4.version>
-        <karaf.version>2.2.9</karaf.version>
-        <karaf.name>poemspace-mailer</karaf.name>
-        <dm4.security.read_requires_login>true</dm4.security.read_requires_login>
-        <dm4.security.write_requires_login>true</dm4.security.write_requires_login>
-        <dm4.security.subnet_filter>0.0.0.0/0</dm4.security.subnet_filter>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -43,6 +33,13 @@
             <groupId>de.deepamehta.assemblies.features</groupId>
             <artifactId>deepamehta-standard</artifactId>
             <version>${dm4.version}</version>
+            <type>xml</type>
+            <classifier>features</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.poemspace.mailer</groupId>
+            <artifactId>features</artifactId>
+            <version>${project.version}</version>
             <type>xml</type>
             <classifier>features</classifier>
         </dependency>
@@ -95,7 +92,7 @@
                                 <feature>ssh</feature>
                                 <feature>eventadmin</feature>
                                 <feature>dm4-standard</feature>
-                                <feature>dm4-webconsole</feature>
+                                <feature>mailer-webconsole</feature>
                                 <feature>mailer</feature>
                             </features>
                         </configuration>
