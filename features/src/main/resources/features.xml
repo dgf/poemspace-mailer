@@ -19,9 +19,9 @@
     <feature name="mailer" description="Poem Space Mailer Distribution" version="${project.version}">
         <feature version="${dm4.version}">dm4-standard</feature>
         <feature version="${project.version}">mailer-webconsole</feature>
-        <bundle>mvn:de.deepamehta/deepamehta-images/0.9</bundle>
-        <bundle>mvn:de.deepamehta/deepamehta-mail/0.1</bundle>
-        <bundle>mvn:com.poemspace/dm4-poemspace/0.1</bundle>
+        <bundle>mvn:de.deepamehta/deepamehta-images/0.9.1-SNAPSHOT</bundle>
+        <bundle>mvn:de.deepamehta/deepamehta-mail/0.2-SNAPSHOT</bundle>
+        <bundle>mvn:com.poemspace/dm4-poemspace/0.2-SNAPSHOT</bundle>
     </feature>
 
 </features>

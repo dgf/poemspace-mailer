@@ -5,15 +5,15 @@
 
     <groupId>com.poemspace.mailer</groupId>
     <artifactId>global</artifactId>
-    <version>0.1</version>
+    <version>0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Poem Space :: Mailer</name>
 
     <properties>
-        <dm4.version>4.1</dm4.version>
+        <dm4.version>4.1.3-SNAPSHOT</dm4.version>
         <dm4.host.url>http://localhost:18081</dm4.host.url>
 
-        <karaf.version>2.3.0</karaf.version>
+        <karaf.version>2.2.9</karaf.version>
         <karaf.name>poemspace-mailer</karaf.name>
 
         <dm4.security.read_requires_login>true</dm4.security.read_requires_login>
@@ -23,6 +23,13 @@
         <file.encoding>UTF-8</file.encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>deepamehta-public-repository</id>
+            <url>http://m2.deepamehta.de</url>
+        </repository>
+    </repositories>
 
     <modules>
         <module>branding</module>

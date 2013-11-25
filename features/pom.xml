@@ -5,13 +5,13 @@
 
     <groupId>com.poemspace.mailer</groupId>
     <artifactId>features</artifactId>
-    <version>0.1</version>
+    <version>0.2-SNAPSHOT</version>
     <name>Poem Space :: Mailer :: Features</name>
 
     <parent>
         <groupId>com.poemspace.mailer</groupId>
         <artifactId>global</artifactId>
-        <version>0.1</version>
+        <version>0.2-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
